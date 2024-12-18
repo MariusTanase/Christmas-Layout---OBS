@@ -161,4 +161,4 @@ creareLuminiCraciun();
 setInterval(updateTimer, 1000);
 
 // repetare interval
-setInterval(startInitial, 40000);
+setInterval(startInitial, 300000);
