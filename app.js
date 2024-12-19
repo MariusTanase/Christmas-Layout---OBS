@@ -137,7 +137,7 @@ function creareLuminiCraciun() {
     culoareTrecuta = culoareRandom; // salvare culoare trecuta
 
     // setare timp random pentru animatie la fiecare lumina
-    const duratieAleatorie = `${Math.random() * 2 + 3}s`; // duratie random intre 3 si 5 secunde
+    const duratieAleatorie = `${Math.random() * 1 + 3}s`; // duratie random intre 2 si 5 secunde
     const intarizereAleatorie = `${Math.random() * 2}s`; // intarziere random intre 0 si 2 secunde
 
     // adaugare animatie la fiecare lumina
@@ -145,8 +145,8 @@ function creareLuminiCraciun() {
     luminita.style.animationDelay = intarizereAleatorie; // adaugare intarziere animatie
 
     // setare pozitie pentru fiecare lumina
-    luminita.style.left = `${pos.x + 10}px`; // setare pozitie x // pozitie orizontala // de la stanga la dreapta
-    luminita.style.top = `${pos.y - 10}px`; // setare pozitie y // pozitie verticala // de sus in jos
+    luminita.style.left = `${pos.x + 15}px`; // setare pozitie x // pozitie orizontala // de la stanga la dreapta
+    luminita.style.top = `${pos.y - 15}px`; // setare pozitie y // pozitie verticala // de sus in jos
 
     // adaugare lumina la container
     containerLuminiCraciun.appendChild(luminita);
