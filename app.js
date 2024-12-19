@@ -88,7 +88,7 @@ function creareLuminiCraciun() {
   const path = document.createElementNS(svgNS, "path");
 
   //   adaugare punct de start svg pentru path
-  let distantaPath = "M0, 25";
+  let distantaPath = "M0, 45";
   //   initiere array pentru a salva pozitia luminilor
   const pozitiiLumini = [];
 
@@ -97,7 +97,7 @@ function creareLuminiCraciun() {
     const progress = i / numarDeBeculete;
 
     const x = window.innerWidth * progress; // pozitia pe axa x pentru fiecare lumina
-    const y = 25 + Math.sin(i * 0.5) * 10; // ajustare unghi sinusoidal pentru fiecare lumina
+    const y = 45 + Math.sin(i * 0.5) * 10; // ajustare unghi sinusoidal pentru fiecare lumina
 
     distantaPath += `L${x}, ${y}`; // adaugare la path
 
@@ -108,7 +108,7 @@ function creareLuminiCraciun() {
   }
 
   //   asigurare ca path-ul se intinde pana la final de pagina (width)
-  distantaPath += `L${window.innerWidth}, 25`;
+  distantaPath += `L${window.innerWidth}, 45`;
 
   //   adaugare path la SVG
   path.setAttribute("d", distantaPath); // adaugare distanta la path
