@@ -16,7 +16,7 @@ function updateTimer() {
 
   document.querySelector(
     "#countdown"
-  ).textContent = `${zile} zile, ${ore} ore, ${minute} minute, ${secunde} s`;
+  ).textContent = `${zile} zile ${ore} ore ${minute} minute ${secunde}s`;
 }
 
 // Functie principala pentru mesaj de craciun cu animatie
